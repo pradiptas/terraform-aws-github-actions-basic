@@ -48,9 +48,7 @@ jobs:
     - name: Terraform Plan
       id: plan
       run: terraform plan -no-color
-      continue-on-error: true
-    - name: Terraform Manual Review
-      id: review 
+      continue-on-error: true 
 
 
 
