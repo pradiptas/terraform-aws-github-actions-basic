@@ -10,7 +10,7 @@ on:
 
 jobs:
   terraform-actions:
-    name: Workflow
+    name: Terraform Infra Spin Up
     runs-on: ubuntu-latest
     steps:
 
@@ -49,6 +49,9 @@ jobs:
       id: plan
       run: terraform plan -no-color
       continue-on-error: true
+    - name: Terraform Manual Review
+      id: review 
+
 
 
 
